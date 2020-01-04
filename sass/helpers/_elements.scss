@@ -16,11 +16,16 @@ input[type='email']::placeholder {
 button {
 	padding: 1.3em 3.5em;
 }
-button[type='submit'] {
+button[type='submit'],
+button:focus {
 	position: absolute;
 	right: 0;
 	top: 50%;
 	transform: translateY(-50%);
 	@include gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 	border: none;
+	cursor: pointer;
+}
+button:focus {
+	outline: 0;
 }

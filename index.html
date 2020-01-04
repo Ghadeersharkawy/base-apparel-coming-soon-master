@@ -41,14 +41,15 @@
 					announcements and our launch deals.
 				</p>
 				<!-- form start-->
-				<form action="" method="post">
+				<form action="" onsubmit="return validateForm()" id="emailForm">
 					<div class="form-group">
 						<input
 							type="email"
-							name=""
-							id=""
+							name="email-address"
+							id="email"
 							placeholder="Email Address"
 						/>
+						<p class="error">Please provide a valid email</p>
 						<button type="submit">
 							<img
 								src="images/icon-arrow.svg"

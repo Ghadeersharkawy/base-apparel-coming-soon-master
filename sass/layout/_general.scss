@@ -68,3 +68,8 @@ h1 > .colored {
 		width: 100%;
 	}
 }
+.error {
+	color: $soft-red;
+	margin-top: 0.8em;
+	display: none;
+}
