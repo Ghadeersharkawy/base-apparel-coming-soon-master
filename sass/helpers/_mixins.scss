@@ -1,0 +1,12 @@
+// gradient mixin
+@mixin gradient($degree, $start, $end) {
+	background-image: -webkit-linear-gradient($degree, $start, $end);
+	background-image: -moz-linear-gradient($degree, $start, $end);
+	background-image: -o-linear-gradient($degree, $start, $end);
+	background-image: linear-gradient($degree, $start, $end);
+}
+
+//font weight
+@mixin fontWeight($weight) {
+	font-weight: $weight;
+}

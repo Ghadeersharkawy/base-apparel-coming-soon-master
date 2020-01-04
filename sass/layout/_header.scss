@@ -1,0 +1,11 @@
+header {
+	position: absolute;
+	padding: 5em;
+	@media screen and (min-width: $large-screens) {
+		padding: 5em 7em;
+	}
+	@media screen and (max-width: $mobile) {
+		position: relative;
+		padding: 2em;
+	}
+}
