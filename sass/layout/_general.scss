@@ -40,12 +40,12 @@ main {
 	}
 }
 .content h1 {
-	font-size: 4.5em;
-	letter-spacing: 5px;
+	font-size: 4em;
+	letter-spacing: 7px;
 	text-transform: uppercase;
 	padding-top: 0.5em;
 	@media screen and (min-width: $large-screens) {
-		font-size: 5.5em;
+		font-size: 5 em;
 	}
 	@media screen and (max-width: $mobile) {
 		font-size: 3.5em;
