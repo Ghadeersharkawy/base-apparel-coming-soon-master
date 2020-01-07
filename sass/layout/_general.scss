@@ -13,10 +13,20 @@ main {
 	@media screen and (max-width: $mobile) {
 		flex-direction: column-reverse;
 	}
+	background-image: url('/images/bg-pattern-desktop.svg');
+	background: url('/images/bg-pattern-desktop.svg'),
+		-moz-linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+
+	background: url('/images/bg-pattern-desktop.svg'),
+		-webkit-linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+	background: url('/images/bg-pattern-desktop.svg'),
+		-o-linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+	background: url('/images/bg-pattern-desktop.svg'),
+		linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 .content {
 	width: 60%;
-	background-image: url('/images/bg-pattern-desktop.svg');
+
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 10em 5em 4em;
@@ -68,8 +78,16 @@ h1 > .colored {
 		width: 100%;
 	}
 }
+
 .error {
 	color: $soft-red;
 	margin-top: 0.8em;
 	display: none;
+}
+.hidden-desktop {
+	display: none;
+	@media screen and (max-width: $mobile) {
+		display: block;
+		margin: 0 auto;
+	}
 }
