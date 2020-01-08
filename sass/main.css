@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("/images/bg-pattern-desktop.svg");
+  background: url("/images/bg-pattern-desktop.svg"), linear-gradient(135deg, white, #fff5f5);
+}
+
+@media screen and (max-width: 425px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.content {
+  width: 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10em 6em 4em;
+}
+
+@media screen and (min-width: 1440px) {
+  .content {
+    padding: 10em 7em 4em;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .content {
+    width: 100%;
+    padding: 4em 2em;
+    text-align: center;
+  }
+}
+
+.content h1 {
+  font-size: 4.5em;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  padding-top: 0.5em;
+}
+
+@media screen and (min-width: 1440px) {
+  .content h1 {
+    font-size: 5em;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .content h1 {
+    font-size: 3.5em;
+  }
+}
+
+h1 > .colored {
+  font-weight: 300;
+  color: #ce9797;
+}
+
+.content > p {
+  color: #ce9797;
+  line-height: 1.5;
+  padding: 1em;
+  width: 72%;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 425px) {
+  .content > p {
+    width: 100%;
+  }
+}
+
+.form-group {
+  width: 70%;
+  position: relative;
+}
+
+@media screen and (max-width: 425px) {
+  .form-group {
+    width: 100%;
+  }
+}
+
+.imagebg {
+  width: 40%;
+}
+
+@media screen and (max-width: 425px) {
+  .imagebg {
+    width: 100%;
+  }
+}
+
+.error {
+  color: #f96262;
+  margin-top: 0.8em;
+  display: none;
+}
+
+.hidden-desktop {
+  display: none;
+}
+
+@media screen and (max-width: 425px) {
+  .hidden-desktop {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+}
+
+input,
+button {
+  padding: 1.5em 2em;
+  border-radius: 30px;
+}
+
+input:focus,
+button:focus {
+  outline: 0;
+}
+
+input[type='email'] {
+  width: 100%;
+  border: 1px solid #ce9797;
+}
+
+input[type='email']::-webkit-input-placeholder {
+  color: #ce9797;
+}
+
+input[type='email']:-ms-input-placeholder {
+  color: #ce9797;
+}
+
+input[type='email']::-ms-input-placeholder {
+  color: #ce9797;
+}
+
+input[type='email']::placeholder {
+  color: #ce9797;
+}
+
+button {
+  padding: 1.3em 3.5em;
+}
+
+button[type='submit'],
+button:focus {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border: none;
+  cursor: pointer;
+}
+
+button[type='submit']:hover,
+button:focus:hover {
+  background-image: linear-gradient(135deg, #ee8c8c, #f8bfbf);
+}
+
+header {
+  position: absolute;
+  padding: 5em;
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    padding: 5em 7em;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header {
+    position: relative;
+    padding: 2em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
